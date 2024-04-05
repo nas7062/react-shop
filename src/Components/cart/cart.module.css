@@ -1,0 +1,119 @@
+.minus{
+    display: inline;
+}
+.minus img {
+    width: 20px;
+    display: inline;
+    margin-left: 50px;
+}
+.count{
+    font-size: 2.0em;
+    display: inline;
+}
+.plus{
+    display: inline;
+}
+.plus img{
+    width: 20px;
+    margin-left: 10px;
+    
+}
+header h1 {
+    text-align: center;
+}
+.image{
+        display: inline-block;
+}
+.image img{
+    width: 200px;
+    height: 250px;
+    margin-top: 15px;
+}
+.text{
+    display: inline-block;
+    margin-left: 50px;
+    width: 200px;
+    position: relative;
+    top: -30px;
+}
+.amount {
+    display: inline; 
+    margin-left: 100px;
+    position: relative;
+    top: -30px;
+}
+.text p {
+    font-weight: 800;
+    font-size: 1.0em;
+}
+.wrap {
+    border: 1px solid grey;
+    display: inline-block;
+    font-size: 1.5em;
+    position: relative;
+    left: 20%;
+    margin-top: 100px;
+    background-color: rgba(235, 235, 235, 0.932)
+}
+.total {
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+.discount {
+    display: inline-block;
+    margin-left: 100px;
+}
+.price {
+    display: inline-block;
+    margin-left: 100px;
+}
+.totalprice {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.none{
+    text-align: center;
+    margin-top: 100px;
+    color: grey;
+}
+.btn{
+    display: inline-block;
+   
+}
+.btn button {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.158);
+    margin-right: 30px;
+}
+.box{
+    border: 1px solid grey;
+    width: 980px;
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+}
+.x{
+    position: relative;
+    top: -288px;
+    left: 960px;
+    color: red;
+   
+}
+.head
+{
+    display: inline-block;
+    width: 980px;
+    border: 1px solid grey;
+    position: relative;
+    left: 20%;
+    padding: 20px 0px;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+.head span{
+    margin-left: 240px;
+    position: relative;
+    font-weight: 800;
+}

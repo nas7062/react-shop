@@ -1,0 +1,124 @@
+.head
+{
+    display: inline-block;
+    width: 980px;
+    border: 1px solid grey;
+    position: relative;
+    left: 20%;
+    padding: 20px 0px;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+.head span{
+   
+    left: 480px;
+    position: relative;
+    font-weight: 800;
+}
+.box{
+    border: 1px solid grey;
+    width: 980px;
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+}
+.image{
+    display: inline-block;
+}
+.image img{
+width: 200px;
+height: 250px;
+margin-top: 15px;
+}
+.text{
+display: inline-block;
+margin-left: 50px;
+width: 200px;
+position: relative;
+top: -30px;
+font-size: 0.9em;
+font-weight: 800;
+color: grey;
+}
+.top{
+    text-align: center;
+    position: relative;
+    left: -50px;
+}
+.adr {
+    position: relative;
+    left: 20%;
+}
+.adr h3{
+    position: relative;
+    left: 120px;
+}
+.number{
+    position: relative;
+    left: 20%;
+}
+.adr label{
+    display: inline-block;
+    
+}
+.email {
+    position: relative;
+    left: 20%;
+}
+.adr input{
+    display: block;
+    width: 332px;
+    margin-top: 10px;
+    height: 25px;
+}
+.number input
+{
+    display: inline;
+    margin-left: 10px;
+    width: 100px;
+    height: 25px;
+}
+.number select {
+    margin-top: 5px;
+    width: 105px;
+}
+.email label {
+    display: block;
+}
+.email input {
+    margin-right: 5px;
+    width: 100px;
+    height: 25px;
+}
+.email input:first-of-type
+{
+    margin-right: 0px;
+}
+.setbuys{
+    position: relative;
+    left: 45%;
+    top: -350px;
+}
+.setbuys h3{
+   position: relative;
+   left: 200px;
+}
+.setbuys button {
+    display: block;
+    position: relative;
+    left: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+}
+.setbuys p {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgba(255, 0, 0, 0.63);
+    position: relative;
+    left: 100px;
+}
+.select{
+    width: 100px;
+}

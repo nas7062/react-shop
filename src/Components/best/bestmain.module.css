@@ -1,0 +1,18 @@
+.image img{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+}
+.main h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+.main span {
+    position: relative;
+    left: 78%;
+    font-size: 0.8em;
+    color: gray;
+    cursor: pointer;
+}

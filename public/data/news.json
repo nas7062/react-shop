@@ -1,0 +1,89 @@
+{
+
+    "products" : [
+    {
+        
+        "id" :9,
+        "name" : "반팔티",
+        "descript":"쫀득한 흰색 반팔티",
+        "price" : 27000,
+        "image" : "/image/31.jpg",
+        "image2" : "/image/32.jpg",
+        "image3" :"/image/33.jpg"
+    },
+    { 
+        "id" :10,
+        "name" : "반바지",
+        "descript":"숏 기장의 반바지",
+        "price" : 37000,
+        "image" : "/image/34.jpg",
+        "image2" : "/image/35.jpg",
+        "image3" :"/image/36.jpg"
+    },
+    { 
+        "id" :11,
+        "name" : "옥스퍼드 셔츠",
+        "descript":"깔끔한 옥스퍼츠 긴팔 셔츠",
+        "price" : 48000,
+        "image" : "/image/37.jpg",
+        "image2" : "/image/38.jpg",
+        "image3" :"/image/39.jpg"
+        
+    },
+    { 
+        "id" :12,
+        "name" : "트렌치 코트",
+        "descript":"트렌디한 트렌치 코트",
+        "price" : 83000,
+        "image" : "/image/40.jpg",
+        "image2" : "/image/41.jpg",
+        "image3" :"/image/42.jpg"
+        
+    },
+    { 
+        "id" :13,
+        "name" : "코튼 팬츠",
+        "descript":"여름철 필수 코튼 팬츠",
+        "price" : 67000,
+        "image" : "/image/43.jpg",
+        "image2" : "/image/44.jpg",
+        "image3" :"/image/45.jpg"
+        
+    },
+    { 
+        "id" :14,
+        "name" : "바람막이",
+        "descript":"꾸안꾸 느낌의 바람막이",
+        "price" : 97000,
+        "image" : "/image/46.jpg",
+        "image2" : "/image/47.jpg",
+        "image3" :"/image/48.jpg"
+        
+    },
+    { 
+        "id" :15,
+        "name" : "카라 니트",
+        "descript":"세련된 카라 니트",
+        "price" : 43000,
+        "image" : "/image/49.jpg",
+        "image2" : "/image/50.jpg",
+        "image3" :"/image/51.jpg"
+        
+    },
+    { 
+        "id" :16,
+        "name" : "니트 조끼",
+        "descript":"깔끔한 분위기 니트조끼",
+        "price" : 39000,
+        "image" : "/image/52.jpg",
+        "image2" : "/image/53.jpg",
+        "image3" :"/image/54.jpg"
+        
+    }
+   
+]
+
+
+
+
+}

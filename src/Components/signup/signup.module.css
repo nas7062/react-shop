@@ -1,0 +1,40 @@
+.form{
+    width: 400px;
+    
+    padding: 50px 50px;
+        text-align: center;
+        position: relative;
+        left: 35%;
+    top: 50px;
+    height: 500px;
+}
+.input{
+    width: 400px;
+    height: 40px;
+    border:0.3px solid rgba(128, 128, 128, 0.349);
+    margin-bottom: 10px;
+    
+}
+.title{
+    font-size: 2.0em;
+    margin-bottom: 0px;
+}
+.p{
+    font-size: 0.8em;
+}
+.btn{
+    display: block;
+    width: 405px;
+    position: relative;
+    left: 0px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+.form label{
+    position: relative;
+    top: 30px;
+    font-weight: 800;
+    left: -250px;
+}

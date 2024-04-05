@@ -1,0 +1,35 @@
+.box{
+    width: 20%;
+    margin: 100px 100px;
+    position: relative;
+    display: inline-block;
+}
+.text{
+    padding: 0px 0px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+}
+.image{
+    width:  350px;
+    height: 300px;
+    display: inline-block;
+    
+}
+.descript{
+   text-align: center;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.p{
+    color: gray;
+    margin-top: -10px;
+    font-size: 0.8em;
+}

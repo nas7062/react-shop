@@ -1,0 +1,140 @@
+.detailhr{
+    width: 30%;
+    position: relative;
+    left: -665px;
+    background-color: gray;
+    height: 0.05px;
+}
+.image{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    margin: 50px 50px;
+    display: inline-block;
+}
+.img {
+    display: inline-block;
+}
+.buy{
+    position: relative;
+    left: 60%;
+    top: -400px;
+    height: 200px;
+}
+.buy p{
+    font-weight: 800;
+}
+.title{
+    margin-right: 80px;
+    
+}
+select{
+    width: 60px;
+    height: 25px;
+    margin-top: 30px;
+}
+.size{
+    margin-right: 105px;
+}
+.btn1{
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+.btn2{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: grey;
+    color: white;
+}
+.btn3{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+}
+.minus{
+    display: inline;
+}
+.minus img {
+    width: 20px;
+    display: inline;
+    margin-right: 10px;
+}
+.count{
+    font-size: 2.0em;
+    display: inline;
+}
+.plus{
+    display: inline;
+}
+.plus img{
+    width: 20px;
+    margin-left: 10px;
+    
+}
+.cnttitle {
+    margin-right: 80px;
+}
+.price{
+    font-size: 1.5em;
+    margin-left: -20px;
+}
+.main {
+    text-align: center;
+   
+}
+.main span{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0px 10px;
+    margin-right: 10px;
+    color:grey;
+    font-weight: 800;
+    cursor: pointer;
+}
+.main span:first-child{
+    color: black;
+}
+.mainimg{
+    display: block;
+}
+.mainimg img{
+    position: relative;
+    left: 35%;
+    width: 400px;
+    display: block;
+}
+.detail hr {
+    width: 30%;
+}
+.detail {
+    margin-top: 100px;
+}
+.review hr {
+    width: 30%;
+}
+.review {
+    margin-top: 100px;
+}
+.qna hr {
+    width: 30%;
+}
+.qna  {
+    margin-top: 100px;
+}
+.loading {
+    position: relative;
+    left: 50%;
+    top :200px;
+    margin-bottom: 500px;
+    font-size: 2.0em;
+    
+    
+    
+}

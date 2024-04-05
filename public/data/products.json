@@ -1,0 +1,89 @@
+{
+
+    "products" : [
+    {
+        
+        "id" :1,
+        "name" : "긴팔티",
+        "descript":"롱 슬리브 흰색 긴팔티",
+        "price" : 17000,
+        "image" : "/image/1.jpg",
+        "image2" : "/image/19.jpg",
+        "image3" :"/image/20.jpg"
+    },
+    { 
+        "id" :2,
+        "name" : "후드티",
+        "descript":"숏 기장의 후드티",
+        "price" : 47000,
+        "image" : "/image/8.jpg",
+        "image2" : "/image/5.jpg",
+        "image3" :"/image/7.jpg"
+    },
+    { 
+        "id" :3,
+        "name" : "데님팬츠",
+        "descript":"깔끔한 워싱 데님팬츠",
+        "price" : 38000,
+        "image" : "/image/12.jpg",
+        "image2" : "/image/10.jpg",
+        "image3" :"/image/11.jpg"
+        
+    },
+    { 
+        "id" :4,
+        "name" : "패딩",
+        "descript":"유광 패딩",
+        "price" : 101000,
+        "image" : "/image/16.jpg",
+        "image2" : "/image/15.jpg",
+        "image3" :"/image/17.jpg"
+        
+    },
+    { 
+        "id" :5,
+        "name" : "니트",
+        "descript":"아고일 니트",
+        "price" : 67000,
+        "image" : "/image/22.jpg",
+        "image2" : "/image/21.jpg",
+        "image3" :"/image/23.jpg"
+        
+    },
+    { 
+        "id" :6,
+        "name" : " 무스탕",
+        "descript":"귀티나는 무스탕",
+        "price" : 97000,
+        "image" : "/image/24.jpg",
+        "image2" : "/image/25.jpg",
+        "image3" :"/image/26.jpg"
+        
+    },
+    { 
+        "id" :7,
+        "name" : "가디건",
+        "descript":"투웨이 가디건",
+        "price" : 47000,
+        "image" : "/image/18.jpg",
+        "image2" : "/image/27.jpg",
+        "image3" :"/image/28.jpg"
+        
+    },
+    { 
+        "id" :8,
+        "name" : "트레커 자켓",
+        "descript":"트레커 자켓",
+        "price" : 67000,
+        "image" : "/image/13.jpg",
+        "image2" : "/image/29.jpg",
+        "image3" :"/image/30.jpg"
+        
+    }
+   
+]
+
+
+
+
+}

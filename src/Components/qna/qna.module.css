@@ -1,0 +1,61 @@
+.form{
+    max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+.form label{
+    display: block;
+    position: relative;
+    left: -160px;
+    font-weight: 800;
+}
+.form h2{
+    position: relative;
+    left: 0px;
+}
+.form input,
+.form textarea{
+    width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  position: relative;
+  left: 0px;
+}
+.form button{
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    left: 150px;
+}
+table{
+    width: 1600px;
+    border-collapse: collapse;
+    margin-left: 100px;
+    
+    
+}
+table th{
+    padding: 14px 21px;
+    background: #ececec;
+    color: #666;
+    font-size: 12px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #ddd;
+}
+table td {
+    padding: 14px 21px;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
