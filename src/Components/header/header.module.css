@@ -17,8 +17,8 @@ a{
 }
 .menu{
     display: inline-flex;
-    margin-right: 50px;
-    margin-left: -300px;
+    margin-right: 0px;
+    margin-left: -370px;
 }
 .menu li{
     padding: 0 20px;
@@ -28,7 +28,7 @@ a{
 .wrap{
     
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 0 20px;
     
 }

@@ -8,18 +8,15 @@ import QnA from "../qna/qna";
 import QnaList from "../qna/qnalist";
 export default function Detail({cart,setcart,reviews,setreviews ,Qna,setQna,buys,setbuys})
 {
-    const {id} =useParams();
-    const [product,setproduct] = useState({});
-    const [count,setcount]= useState(1);
+    const {id} =useParams(); // useparams로 id값을 받아와 동적으로 페이지 구현가능
+    const [product,setproduct] = useState({}); // proudcts 저장
+    const [count,setcount]= useState(1); 
     
     const CountHandler = (type) =>{
-        if(type ==="plus")
-        {
-            setcount(count+1);
-            
+        if(type ==="plus"){
+            setcount(count+1);  
         }
-        else
-        {
+        else{
             if(count ===1) return;
             setcount(count-1);
         }
@@ -29,41 +26,28 @@ export default function Detail({cart,setcart,reviews,setreviews ,Qna,setQna,buys
    
     useEffect(() =>{
         
-        axios.all([axios.get("/data/products.json"),axios.get("/data/news.json"),]).then(axios.spread((res1,res2)=>
-        {
+        axios.all([axios.get("/data/products.json"),axios.get("/data/news.json"),]).then(axios.spread((res1,res2)=>{
             {
                 id < 9 ?setproduct(res1.data.products.find((product)=>product.id ===parseInt(id))) :
                 setproduct(res2.data.products.find((product)=>product.id ===parseInt(id)))
-            }
-            
-            
-            
-            
+            }   
         })
         )
-        
-     
-       
-    },[id]);
-   
+    },[id]); // axios를 활용하여 한번에 여러개 요청하는 방법. 
     
-    console.log(product);
-   
-    
-    
-    const CartCountHandler = (id,cnt) =>{
-        const find  = cart.filter((e) => e.id ===id)[0];
-        const index  =cart.indexOf(find);
-        const Item ={
-            id: product.id,
-            image: product.image,   
-            name :product.name,
-            price :product.price,
-            descript :product.descript,
-            count :cnt
-        }
-        setcart([...cart.slice(0,index),Item,...cart.slice(index+1)]);
-    }
+    // const CartCountHandler = (id,cnt) =>{
+    //     const find  = cart.filter((e) => e.id ===id)[0]; 
+    //     const index  =cart.indexOf(find); // cart에 들어있는 proudct.id와 현재 proudct.id가 같은지
+    //     const Item ={
+    //         id: product.id,
+    //         image: product.image,   
+    //         name :product.name,
+    //         price :product.price,
+    //         descript :product.descript,
+    //         count :cnt
+    //     }
+    //     setcart([...cart.slice(0,index),Item,...cart.slice(index+1)]);
+    // }
     
     const CartHandler =()=>{
         const Item ={
@@ -74,15 +58,16 @@ export default function Detail({cart,setcart,reviews,setreviews ,Qna,setQna,buys
             descript :product.descript,
             count :count
         }
-        const found =cart.find((e)=>e.id ===Item.id);
+        const found =cart.find((e)=>e.id ===Item.id); 
+        //cart에 들어있는 id와 현재 product.id가 같은지 확인. 
         if(found)
-        setcount(Item.id,found.count+count);
+        setcount(Item.id,found.count+count); // cart에 들어있는 proudct count만 증가
         else
-        setcart([...cart,Item]);
+        setcart([...cart,Item]); // cart에 새로운 product 추가.
         
     }
     
-    const BuyHandler =()=>{
+    const BuyHandler =()=>{  
         const Item ={
             id: product.id,
             image: product.image,
@@ -91,25 +76,23 @@ export default function Detail({cart,setcart,reviews,setreviews ,Qna,setQna,buys
             descript :product.descript,
             count :count
         }
-        const found =buys.find((e)=>e.id ===Item.id);
+        const found =buys.find((e)=>e.id ===Item.id); 
         if(found)
         setcount(Item.id,found.count+count);
-        else
-        {
-            setbuys([...buys,Item]);
-            
+        else{
+            setbuys([...buys,Item]); 
         } 
            
       
     }
     
     const ReviewSubmitHandler = (newrivew) =>{
-        setreviews((prevreview) =>[...prevreview, newrivew]);
+        setreviews((prevreview) =>[...prevreview, newrivew]); 
     }
     
-    const MoveHandler= (id) =>{
-        const element = document.getElementById(id);
-
+    const MoveHandler= (id) =>{ 
+        const element = document.getElementById(id); 
+        // id를 찾아 element를 넣어 클릭 시 id가 있는 위치로 이동하게 하는 함수 
         if(element)
         {
             window.scrollTo({top:element.offsetTop , behavior :"smooth"});
@@ -121,6 +104,7 @@ export default function Detail({cart,setcart,reviews,setreviews ,Qna,setQna,buys
     }
     return(
         <>
+            {/* proudct가 있을때와 없을때로 나눔 */}
             {product ? <main>
                 <section className={style.img}>
                     <div className={style.img}>

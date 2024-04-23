@@ -13,7 +13,8 @@ export default function SignUp()
     useEffect(() =>{
         const Users = JSON.parse(localStorage.getItem('users')) || [];
         setusers(Users);
-    },[]);
+    },[]); // localstorage에서 users를 가져와 users에 넣음.
+
     useEffect(() =>{
         if(Loginusername)
         {
@@ -23,7 +24,8 @@ export default function SignUp()
     }, [users]);
 
     const SingUpHandler = (username,password) =>{
-        const existing =users.find((u) => u.usernames=== usernames);
+        const existing =users.find((u) => u.usernames=== usernames); 
+        // users에 usersnames가 이미 있으면 가입하지 못하게 
         if(existing )
         {
             alert("이미 존재하는 아이디입니다.");
@@ -43,14 +45,14 @@ export default function SignUp()
             id :new Date().getTime(),
             usernames,
             passwords,
-        };
+        }; // 새로운 유저 
         
         setusers((prev) =>[...prev,newUser]);
         setLoginusername(newUser);
         alert("회원가입 성공!");
         
         setTimeout(() => {
-            navigate("/")
+            navigate("/")  // 메인페이지로 이동
         }, 250);
         
         

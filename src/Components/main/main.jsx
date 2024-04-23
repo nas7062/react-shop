@@ -9,14 +9,14 @@ import Box from "../box/box";
         axios.get("/data/products.json").then((data)=>{
             setproducts(data.data.products);
         });
-    },[setproducts]);
+    },[setproducts]); // axios.get으로 json에 있는 data를 받아 products에 저장.
     return(
     <>
     
         <Box img ={`${process.env.PUBLIC_URL}/image/1.jpg`} text="BEST" descript="NOW,BEST" p="이번주 주문베스트" products={products} setproducts={setproducts} link ="/best"/>
         <Box img ={`${process.env.PUBLIC_URL}/image/25.jpg`}text="NEW" descript="NEW 5%할인" p="이번달 신상품" products={products} setproducts={setproducts} link="/New"/>
         <Box img ={`${process.env.PUBLIC_URL}/image/22.jpg`}text="SALE" descript=" 10%할인" p="이번달 세일상품" products={products} setproducts={setproducts}/>
-        
+         {/* img ={`${process.env.PUBLIC_URL}/image/22.jpg`}  PUBLIC_URL을 활용하여 public에 있는 image파일 가져오는 방법.  */}
         
         <main>
         {products.map((product) =>{

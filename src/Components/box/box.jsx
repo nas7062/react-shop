@@ -8,7 +8,7 @@ export default function Box({img,text,descript,p,products,setproducts,link})
         axios.get("/data/products.json").then((data)=>{
             setproducts(data.data.products);
         });
-    },[setproducts]);
+    },[setproducts]); 
     return (
         <div className={style.box}>
             <div className={style.text}>

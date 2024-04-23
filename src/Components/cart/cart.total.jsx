@@ -4,18 +4,18 @@ import style from "./cart.module.css";
 
 export default function Carttotal ({cart,total ,settotal,found,buys,setbuys,setcart}) 
 {
-    const navigate = useNavigate();
+    const navigate = useNavigate(); // 페이지 이동
     useEffect(()=>{
-        if(found)
+        if(found) // found => cart에 체크된 product
         {
-            const sum = found.map((item) =>item[0].price * item[0].count);
+            const sum = found.map((item) =>item[0].price * item[0].count); 
             const reducer = (cur,nex) => cur+nex;
             if(sum.length ===0)
             {
                 settotal(0);
                 return;
             }
-            const itemtotal = sum.reduce(reducer);
+            const itemtotal = sum.reduce(reducer); // 체크된 proudct 가격과 갯수 곱한 값
             settotal(itemtotal);
         }
         else
@@ -50,9 +50,9 @@ export default function Carttotal ({cart,total ,settotal,found,buys,setbuys,setc
         </div>
         <div className={style.btn}>
             <button onClick={()=>{
-                navigate('/buy');
-                setbuys([...cart]);
-                setcart([]);
+                navigate('/buy'); // buy페이지로 이동
+                setbuys([...cart]); // cart에 있는 상품 buy로 넘겨줌.
+                setcart([]); // cart는 비움.
             }}> 결제하기 </button>
         </div>
         </div>

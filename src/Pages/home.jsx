@@ -5,7 +5,7 @@ function Home({products,setproducts})
 {
     return (
         <>
-    <SlickSlider products={products} setproducts ={setproducts}/>,
+    <SlickSlider products={products} setproducts ={setproducts}/> 
     <Main products ={products} setproducts ={setproducts} />
     </>
     );

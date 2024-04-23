@@ -8,23 +8,23 @@ export default function Bestmain({products,setproducts})
         axios.get("/data/products.json").then((data)=>{
             setproducts(data.data.products);
         });
-    },[setproducts]);
+    },[setproducts]); 
 
     const SortHandler = (type) =>{
-        const  newProduct =[...products];
+        const  newProduct =[...products]; // newProduct에 proudcts 초기화
         if(type ==="new")
         {
-            newProduct.sort((a,b) =>a.id -b.id);
+            newProduct.sort((a,b) =>a.id -b.id); //sort함수를 이용하여 id 순으로 정렬
             setproducts(newProduct);
         }
         else if(type ==="row")
         {
-            newProduct.sort((a,b) =>a.price - b.price);
+            newProduct.sort((a,b) =>a.price - b.price); // sort함수를 이용하여 낮은 가격순으로 정렬
             setproducts(newProduct);
         }
         else if(type ==="high")
         {
-            newProduct.sort((a,b) =>b.price - a.price);
+            newProduct.sort((a,b) =>b.price - a.price);// sort함수를 이용하여 높은 가격순으로 정렬
             setproducts(newProduct);
         }
     }
@@ -44,7 +44,7 @@ export default function Bestmain({products,setproducts})
             </div>
                 <main>
         {products.map((product) =>{
-            return <Product key={`key-${product.id}`} product = {product} />
+            return <Product key={`key-${product.id}`} product = {product} /> 
         })}
                 </main>
                 

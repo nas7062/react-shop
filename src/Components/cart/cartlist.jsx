@@ -8,6 +8,7 @@ export default function Cartlist({cart ,counthandler,removehandler ,checkhandler
                 checkhandler(cart.id,e.currentTarget.checked);
             }
             } checked ={checks.includes(cart.id) ? true :false} />
+             {/* checks에 cart.id가 포함되어있는지  */}
             <div className={style.image}>
                 <img src={cart.image} alt="" />
             </div>
