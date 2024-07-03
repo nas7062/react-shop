@@ -23,10 +23,19 @@
   </div>
 </div>
 <div>
-  <h2>화면 구성</h2>
-    <p>메인페이지</p>
-    ![상품 상세 화면](../public/image/main.jpg)
+    <h2>화면 구성</h2>
+      <h3>메인페이지</h3>
+  <img width="500" height="300" src ="https://github.com/nas7062/react-shop/assets/84384915/5aa81c07-f043-4e25-b941-3b507c7c0288"/>
+    <h3>상세페이지</h3>
+  <img width="500" height="300" src ="https://github.com/nas7062/react-shop/assets/84384915/d8360ecc-5e26-4884-b1f0-e48839a94602"/>
+  <h3>장바구니</h3>
+  <img width="500" height="300" src ="https://github.com/nas7062/react-shop/assets/84384915/655c8e35-9a2c-44c9-83a1-37961125c80c"/>
+ <h3>커뮤니티</h3>
+  <img width="500" height="300" src ="https://github.com/nas7062/react-shop/assets/84384915/d64be59d-bedf-495e-9df6-fc697e4e2be3"/>
 </div>
-
+<div>
+  <h2>주요기능</h2>
+  
+</div>
 </div>
 
