@@ -3,7 +3,7 @@
   <h2>시작가이드</h2>
  
     npm i 
-    npm run start
+    npm start
    
 </div>
 <div>
